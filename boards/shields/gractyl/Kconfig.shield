@@ -1,0 +1,5 @@
+config SHEILD_GRACTYL_LEFT
+        def_bool $(sheild_list_contains,gractyl_left)
+
+config SHEILD_GRACTYL_LEFT
+        def_bool $(sheild_list_contains,gractyl_right)
