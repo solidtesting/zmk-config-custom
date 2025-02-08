@@ -14,20 +14,6 @@
 };
 
 / {
-
-    keymap {
-        compatible = "zmk,keymap";
-        default_layer {
-            bindings = <
-                // position 0     pos 1             pos 2             pos 3             pos 4    pos 5    pos 6    pos 7    pos 8    pos 9    pos 10
-                &lh_pht LSFT A    &lh_pht LGUI S    &lh_pht LALT D    &lh_pht LCTL F    &kp G    &kp H    &kp I    &kp J    &kp K    &kp L    &kp SEMI
-            >;
-            sensor-bindings = <&encoder_cw C_VOL_UP &encoder_ccw C_VOL_DN>;
-        };
-    };
-};
-
-/ {
     behaviors {
         lh_pht: left_positional_hold_tap {
             compatible = "zmk,behavior-hold-tap";
@@ -53,6 +39,7 @@
                                                               &mt LCMD SPACE    &mt LCTRL BSPC &kp LSHFT                    &kp RSHFT   &kp BSPC   &kp SPACE
                                                               &mt LALT RET      &mt LALT RET   &mo LWR                      &mo LWR     &kp RET    &kp RET
             >;
+            sensor-bindings = <&encoder_cw C_VOL_UP &encoder_ccw C_VOL_DN>;
         };
 
         gaming_layer {
