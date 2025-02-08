@@ -39,7 +39,7 @@
                                                               &mt LCMD SPACE    &mt LCTRL BSPC &kp LSHFT                    &kp RSHFT   &kp BSPC   &kp SPACE
                                                               &mt LALT RET      &mt LALT RET   &mo LWR                      &mo LWR     &kp RET    &kp RET
             >;
-            sensor-bindings = <&encoder_cw C_VOL_UP &encoder_ccw C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
         gaming_layer {
