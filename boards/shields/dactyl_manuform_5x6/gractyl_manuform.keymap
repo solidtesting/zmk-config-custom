@@ -22,6 +22,7 @@
                 // position 0     pos 1             pos 2             pos 3             pos 4    pos 5    pos 6    pos 7    pos 8    pos 9    pos 10
                 &lh_pht LSFT A    &lh_pht LGUI S    &lh_pht LALT D    &lh_pht LCTL F    &kp G    &kp H    &kp I    &kp J    &kp K    &kp L    &kp SEMI
             >;
+            sensor-bindings = <&encoder_cw C_VOL_UP &encoder_ccw C_VOL_DN>;
         };
     };
 };
@@ -65,6 +66,7 @@
                                                               &kp SPACE         &kp T          &kp G                        &kp RSHFT   &kp BSPC   &kp SPACE
                                                               &kp B             &kp B          &mo LWR                      &mo LWR     &kp RET    &kp RET
             >;
+            sensor-bindings = <&encoder_cw KP_PG_UP &encoder_ccw KP_PG_DN>;
         };
 
         lower_layer {
